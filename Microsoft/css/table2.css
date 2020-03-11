@@ -1,0 +1,40 @@
+@media screen and (max-width:945px) {
+    .menubtn{
+        display: none;
+    }
+
+    .hamburger{
+        margin-right: 20px;
+        background-position: center;
+        background-size: cover;
+        display: block;
+         /* order: -2;  */
+    }
+    .navbar{
+        justify-content: space-between;
+        padding-left: unset;
+        padding: 0px 5px 0 13px;
+    }
+    .Microsoft,.search2{
+        display: none;
+    }
+    .search3{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: block;
+    }
+    .logo2 img{
+        width: 120px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_cart{
+        margin: 0;
+    }
+}

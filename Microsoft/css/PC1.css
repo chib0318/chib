@@ -1,0 +1,660 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.navbar ul{
+
+    display: unset;
+}
+.flex{
+    display: flex;
+}
+.navbar{
+    width: 100%;
+}
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 8px 10px;
+    font-size: 14.3px;
+}
+.hamburger{
+    display: none;
+}
+.all{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.width{
+    width: 100%;
+}
+.height{
+    height: 100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.all{
+    width: 100%;
+}
+.img-size{
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 84%;
+    height: 64px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 34px;
+    margin: auto;
+    position: relative;
+    font-size: 14.3px;
+}
+.logo img{
+    width: 121px;
+    margin-right: 26px;
+}
+.logotext{
+    font-size: 15px;
+}
+.menubtn{
+    margin-right: auto;
+}
+.menubtn-font{
+    font-size: 13px;
+}
+.Microsoft{
+    margin-right: 34px;
+}
+.search{
+    display: flex;
+    justify-content: start;
+    margin-right: 54px;
+}
+.search1 img{
+    width: 100%;
+}
+.shopping{
+    display: flex;
+    justify-content: start;
+    margin-right: 54px;
+}
+.shopping1{
+    background-image: url("../img/supermarket.png");
+}
+.login{
+    display: flex;
+    justify-content: start;
+}
+.login1{
+    background-image: url("../img/member.png");
+}
+.main{
+    width: 84%;
+    margin-bottom: 38px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    max-width: calc(1600px + 10%);
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#carousel_L {
+    position: absolute;
+    bottom: -10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel_style {
+    /* position: absolute; */
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel_style>h2 {
+    font-size: 46px;
+    line-height: 56px;
+    padding: 37px 0 3px;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    overflow: hidden;
+    box-sizing: content-box;
+    max-height: 112px;
+    margin: 0;
+}
+
+#carousel_text {
+    margin: 12px 0 0 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    box-sizing: content-box;
+    max-height: 80px;
+    padding: 0;
+}
+
+#carousel_btn {
+    margin: 12px 0 0 0;
+    padding: 12px 2px 0 0;
+}
+
+#carousel_btn>#left {
+    padding: 10px 20px 6px 18px;
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+    position: relative;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    outline-offset: -3px;
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 transparent;
+    margin-right: 54px;
+}
+
+#carousel_btn>#left>span {
+    padding: 0 17px 3px 7px;
+}
+
+#carousel_btn>#right>span {
+    padding: 0 17px 8px 7px;
+}
+
+#carousel_btn>#right {
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    outline-offset: -3px;
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 transparent;
+    margin-right: 42px;
+}
+
+#carousel_btn>a {
+    position: relative;
+}
+
+#carousel_btn>a>span {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    text-overflow: clip;
+    overflow: hidden;
+    /* transition: all 200ms ease-in-out; */
+    vertical-align: top;
+    line-height: 18.5px;
+}
+
+#carousel_btn>#left>span::after {
+    content: url("../img/Icon/next-white.png");
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    transition: all 200ms ease-in-out;
+}
+
+#carousel_btn>#left:hover>span {
+    padding: 0 20px 3px 4px; 
+}
+
+#carousel_btn>#left:hover>span::after {
+    right: -1px;
+}
+
+#carousel_btn>#left:hover>span::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px white solid;
+    width: 121px;
+    bottom: 0;
+    left: 3px;
+}
+
+#carousel_btn>#right>span::after {
+    content: url("../img/Icon/next-black.png");
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    transition: all 200ms ease-in-out;
+}
+
+#carousel_btn>#right:hover>span::after {
+    right: -1px;
+}
+
+#carousel_btn>#right:hover>span::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px black solid;
+    width: 89px;
+    bottom: 4px;
+    left: 7px;
+}
+#xbox_L {
+    position: absolute;
+    bottom:10%;
+    height: 300px;
+    display: flex;
+    left: 10%;
+}
+
+.xbox_style {
+    /* position: absolute; */
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.xbox_style>h2 {
+    font-size: 46px;
+    line-height: 56px;
+    padding: 37px 0 3px;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    overflow: hidden;
+    box-sizing: content-box;
+    max-height: 112px;
+    margin: 0;
+}
+
+#xbox_text {
+    margin: 12px 0 0 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    box-sizing: content-box;
+    max-height: 80px;
+    padding: 0;
+}
+
+#xbox_btn {
+    margin: 12px 0 0 0;
+    padding: 12px 2px 0 0;
+}
+
+#xbox_btn>#left {
+    padding: 10px 20px 6px 18px;
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+    position: relative;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    outline-offset: -3px;
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 transparent;
+    margin-right: 54px;
+    left: -27px;
+}
+
+#xbox_btn>#left>span {
+    padding: 0 17px 3px 7px;
+}
+
+#xbox_btn>a {
+    position: relative;
+}
+
+#xbox_btn>a>span {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    text-overflow: clip;
+    overflow: hidden;
+    /* transition: all 200ms ease-in-out; */
+    vertical-align: top;
+    line-height: 18.5px;
+}
+
+#xbox_btn>#left>span::after {
+    content: url("../img/Icon/next-white.png");
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    transition: all 200ms ease-in-out;
+}
+
+#xbox_btn>#left:hover>span {
+    padding: 0 20px 3px 4px; 
+}
+
+#xbox_btn>#left:hover>span::after {
+    right: -1px;
+}
+
+#xbox_btn>#left:hover>span::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px white solid;
+    width: 121px;
+    bottom: 0;
+    left: 3px;
+}
+
+
+.pad-hero{
+    max-width: calc(1600px + 10%);
+    position: relative;
+}
+.bto:hover{
+-webkit-filter: brightness(1.04);
+
+}
+.explain-title{
+    text-align: center;
+}
+.banner img{
+    width: 100%;
+}
+/* benner長寬 */
+
+.pad-content{
+    width: 100%;
+    margin: 48px 0 48px 0;
+    
+    display: flex;
+}
+/* banner下面四個商品樣式 */
+.pad-content-style{
+    width: 25%;
+}
+.pad-content-style img{
+    width: 100%;
+}
+/* 每個商品區間 */
+.pad-content1{
+    margin-right: 24px;
+}
+.pad-content2{
+    margin-right: 24px;
+}
+.pad-content3{
+    margin-right: 24px;
+}
+.bksize{
+    background-position: center;
+    background-size: cover;
+}
+.pad-hero img{
+    width: 100%;  
+}
+p a{
+    color: blue;
+}
+/* 工作地點標題 */
+.workplace-title{
+    width: 100%;
+    margin-top: 48px;
+}
+.workplace{
+    width: 100%;
+}
+.work1{
+    margin-right: 24px;
+}
+.work2{
+    margin-right: 24px;
+}
+.work3{
+    margin-right: 24px;
+}
+/* 工作詳細內容 */
+.workplace-content{
+    display: flex;
+}
+.workplace-style{
+    width: 25%;
+}
+.workplace-style img{
+    width: 100%;
+}
+.workplace-margin{
+    margin-right: 25px;
+}
+.social{
+    width: 100%;
+    padding:60px 0 60px 0 ;
+    display: flex;
+    align-items: center;
+}
+.facebook{
+    
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+}
+.youtube{
+   
+    width: 28px;
+    height: 28px;
+}
+
+.followus{
+    margin-right: 10px;
+   
+}
+.Microsoft::after{
+    content: "∨";
+    font-size: 13.3px;
+}
+.search ::after{
+    content: "";
+    width: 20px;
+    height: 19px;
+    background-image: url(../img/search.jpg);
+    background-size: 100%; 
+     position: absolute;
+    
+}
+.shopping ::after{
+    content: "";
+    width: 20px;
+    height: 22px;
+    background-image: url(../img/shopping.jpg);
+    background-size: 100%; 
+     position: absolute;
+     
+    
+}
+.login ::after{
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' stroke='%23707070'%3E%3Cg class='mectrl_stroke' stroke-width='1.9' fill='none'%3E%3Ccircle cx='32' cy='32' r='30.25'/%3E%3Cg transform='matrix(1.1 0 0 1.1 8.8 5.61)'%3E%3Ccircle class='mectrl_stroke' cx='20' cy='16' r='7'/%3E%3Cpath class='mectrl_stroke' d='M30 35h10m-5-5v10M30.833 32.09A11 11 0 009 34'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 100%; 
+     position: absolute;
+    display: flex;
+    right: -30px;
+    bottom:  -8px;
+}
+.menubtn ul a li{
+    position: relative;
+}
+.menubtn ul a li::before{
+    background: currentColor;
+    content: "";
+    display: none;
+    height: 2px;
+    position: absolute;
+    width: calc(100% - 17px);
+    left:8px;
+    margin-bottom: 5px;
+    bottom:0; 
+   
+}
+.menubtn ul a li:hover::before{
+    display: block; 
+}
+.Microsoft,.search,.shopping,.login{
+    position: relative;
+}
+.Microsoft::before,.search::before,.shopping::before,.login::before{
+    background: currentColor;
+    content: "";
+    display: none;
+    height: 2px;
+    position: absolute;
+    margin-top: 23px;
+    width: calc(100% - 10px);
+    
+}
+.Microsoft:hover::before,.search:hover::before,.shopping:hover::before,.login:hover::before{
+    display: block; 
+}
+.nav_cart {
+    margin-left: auto;
+    display: flex;
+}
+.search2,.shopping2,.login2{
+    display: none;
+}
+.search3{
+    display: none;
+}
+.logo2{
+    display: none;
+}
+.footerArea {
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    padding: 0 5%;
+}
+
+.footer_nav {
+    margin: auto;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_nav ul {
+    color: rgba(0,0,0,0.7);
+    padding: 36px 0 4px;
+    flex: 1;
+}
+.footer_nav ul li {
+    font-size: 12px;
+    padding: 8px;
+}
+
+.footer_nav ul>span {
+    
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer_nav div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_nav ul li:hover {
+    text-decoration: underline;
+    color: rgba(0,0,0,.9);
+}
+.footer_nav ul li:hover:focus {
+    outline: 1px dashed black;
+    outline-offset: 3px;
+}
+.navbar a:focus{
+    outline: 1px dashed currentColor;
+    /* outline-offset:3px; */
+
+}
+.footer_nav ul li:hover span {
+    text-decoration: none;
+}
+.place_style span {
+    padding: 10px 40px 7px 0;
+    position: relative;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    outline-offset: -3px;
+    margin-left: 0;
+    color: #0067b8;
+    background: transparent;
+    transition: none;
+    white-space: normal;
+    text-align: left;
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.place_style span::after {
+    content: url("../img/next-blue.png");
+    position: absolute;
+    right: 20px;
+    transition: 0.3s;    
+}
+
+.place_style span:hover::after {
+    right: 15px;
+}
+.place_style span:hover::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    width: 70px;
+    border-bottom: solid 2px #1c83d1;
+}

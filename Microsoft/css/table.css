@@ -1,0 +1,128 @@
+
+@media screen and (max-width:1803px){
+    .main{
+        width: 90%;
+    }
+    .navbar{
+        width: 90%;
+    }
+    #carousel_L {
+        bottom: -6vh;
+    }
+    .carousel_style h2{
+        font-size: 25px;
+    }
+    #carousel_text {
+        margin: 0;
+    }
+    #carousel_text p{
+        margin: 0;
+    }
+}
+@media screen and (max-width:1539px){
+    .search,.shopping,.login{
+        display: none;
+    }
+    .search2,.shopping2,.login2{
+        display: block;
+    }
+    .box{
+        display: flex;
+        align-items: center;
+    }
+    .search2,.shopping2{
+        margin-right: 20px;
+    }
+    
+}
+@media screen and (max-width:945px) {
+
+    .navbar{
+        width: 100%;
+        padding-left: 32px;
+    }
+    .search span{
+        display: none;
+    }
+    .search{
+        margin-right: 27px;
+    }
+    .shopping span{
+        display: none;
+    }
+    .shopping{
+        margin-right: 27px;
+    }
+    .login span{
+        display: none;
+    }
+    .login{
+        margin-right: 27px;
+    }
+    .main{
+        width: 100%;
+    }
+    
+    .pad-content{
+        width: 90%;
+        margin:auto;
+        flex-wrap: wrap;
+    }
+    .pad-content2{
+        margin-right: 0;
+    }
+    .workplace{
+        width: 84%;
+        margin: auto;
+    }
+    .social{
+        width: 90%;
+        margin: auto;
+      
+    }
+    /* banner下面四個商品樣式 */
+    .pad-content-style{
+        margin-top: 40px;
+        width: calc(50% - 12px);
+}
+    .work2{
+        margin-right: 0;
+    }
+    .workplace-style{
+        margin-top: 40px;
+        width:calc(50% - 12px);
+    }
+    .workplace-title{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .workplace-content{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .workplace{
+        width: 100%;
+    }
+    .pad-hero{
+        margin-top: 48px;
+    }
+    h2 {
+        margin: 0 0 -28px 4%;
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin: 0 0 -30px 0;
+    }
+    .footer_nav {
+        flex-wrap: wrap;
+    }
+    .footer_nav div {
+        width: 100%;
+        display: flex;
+    }
+    
+}
