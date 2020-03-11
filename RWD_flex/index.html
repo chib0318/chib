@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .pc {
+            display: block;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .float-l {
+            float: left;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+        
+
+        .menu {
+            width: 366px;
+            height: 100vh;
+            background-color: rgb(66, 68, 62);
+            padding-top: 100px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            background-image: url('img/1.jpg');
+            background-size:cover;
+            background-position: center;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .content {
+            width: calc(100% - 366px);
+            height: 100vh;
+            background-color: rgb(170, 170, 170);
+            padding-top: calc(50vh - 285px);
+        }
+        #box{
+            width: 956px;
+            height: 570px;
+            margin: auto;
+        }
+        #boxa{
+   
+        height: 100%;
+        width: calc(33% - 6px);
+        float: left;
+        margin-right: 10px;
+        background-image: url('img/123.jpg');
+        background-size:cover;
+        background-position: center;
+        }
+        #boxb{
+        
+        height: 100%;
+        width: calc(34% - 7px);
+        float: left;
+        margin-right: 10px;
+        background-image: url('img/456.jpg');
+        background-size:cover;
+            background-position: center;
+        }
+        #boxc{
+        
+        height: 100%;
+        width: calc(33% - 7px);
+        float: left;
+        background-image: url('img/789.jpg');
+        background-size:cover;
+            background-position: center;
+        }
+        .mas:hover{
+        background-color: rgba(0, 0, 0,0.3);
+
+        }
+        .mas{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        transition: 1.5s;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 20px;
+            background-color: cadetblue;
+            margin-bottom: 10px;
+        }
+
+        .menu-btn {
+            margin: auto;
+            width: 85px;
+        }
+
+        .menu-toggle{
+            width: 50px;
+            height: 50px;
+            background-image: url('img/111.png');
+            display: none;
+        }
+        /* 1280*1024 */
+        @media (max-width: 1500px){
+            #box{
+            width: 800px;
+            height: 570px;
+            margin: auto;
+            }
+            #boxa{
+            height: 50%;
+            width: 100%;
+            /* margin: 0 auto; */
+            background-image: url('img/123.jpg');
+            background-size:cover;
+            background-position: center;
+            margin-bottom: 10px;
+            }
+            #boxb{
+            height: calc(50% - 10px);
+            width: calc(50% - 5px);
+            float: left;
+            background-image: url('img/456.jpg');
+            background-size:cover;
+            background-position: center;
+            margin-right: 10px;
+            }
+            #boxc{
+            height: calc(50% - 10px);
+            width: calc(50% - 5px);
+            background-image: url('img/789.jpg');
+            background-size:cover;
+            background-position: center;
+            float: left;
+            }
+        }
+
+
+        
+
+        /* 768*1024 */
+        @media (max-width: 1279px) { 
+
+            .menu {
+                width: 100%;
+                height: unset;
+                padding-top: 0;
+                padding: 20px
+            }
+
+            .content {
+                width: 100%;
+                height: 100vh;
+                padding: 0;
+                padding-top: calc(50vh - 400px);
+            }
+
+            .logo {
+                width: 38px;
+                height: 38px;
+                float: left;
+                margin: 0;
+            }
+
+            .menu-btn {
+                float: right;
+                width: unset;
+            }
+
+            ul {
+                display: unset;
+            }
+
+            li {
+                display: inline-block;
+                margin: 0;
+            }
+            #box{
+            width: 700px;
+            height: 800px;
+            margin: auto;
+            }
+            #boxa{
+            height: 50%;
+            width: 100%;
+            margin: 0 auto;
+            background-image: url('img/123.jpg');
+            background-size:cover;
+            background-position: center;
+            margin-bottom: 10px;
+            }
+            #boxb{
+            height: calc(50% - 10px);
+            width: calc(50% - 5px);
+            float: left;
+            background-image: url('img/456.jpg');
+            background-size:cover;
+            background-position: center;
+            margin-right: 10px;
+            }
+            #boxc{
+            height: calc(50% - 10px);
+            width: calc(50% - 5px);
+            background-image: url('img/789.jpg');
+            background-size:cover;
+            background-position: center;
+            float: left;
+            }
+
+        } 
+
+        /* view height */
+        /* view width */
+        /* 375*667 */
+        @media (max-width: 600px) { 
+            .pc {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .logo{
+                float: right;
+            }
+
+            .menu{
+                padding:20px  calc(50vw - 19px) 20px 20px;
+            }
+            #box{
+                width: 100%;
+                height: 150vh;
+                margin: auto; 
+                
+            }
+            #boxa{
+   
+            height: 50vh;
+            width: 100%;
+            margin: 0 auto;
+            
+            
+            }
+            #boxb{
+            height: 50vh;
+            width: 100%;
+          
+            }
+            #boxc{
+            height: 50vh;
+            width: 100%;
+            }
+            .content{
+                padding: 0;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="menu float-l">
+        <div class="menu-toggle mobile float-l"></div>
+        <div class="logo"></div>
+        <div class="menu-btn pc">
+            <ul>
+                <li>車子</li>
+                <li>加油</li>
+                <li>飄車</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content float-l">
+       <div id="box">
+            <div id="boxa" >
+                <div id="boxaa" class="mas"></div>
+            </div>
+            <div id="boxb" >
+                <div id="boxbb" class="mas"></div>
+            </div>
+            <div id="boxc" >
+                <div id="boxcc" class="mas"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
