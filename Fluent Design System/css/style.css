@@ -1,0 +1,1065 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.li-mL {
+  margin-left: 130px;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  padding: 26px;
+}
+
+.card-2 {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  padding: 26px;
+}
+
+.viewBox {
+  width: 16px;
+  height: 16px;
+}
+
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  display: none;
+}
+
+@media (max-width: 843px) {
+  #nav-toggle {
+    display: block;
+  }
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.all {
+  width: 100%;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+.all header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1560px) {
+  .all header {
+    width: 97%;
+  }
+}
+
+.all header .navbar {
+  background-color: black;
+  width: 100%;
+  height: 48px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1579px) {
+  .all header .navbar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1125px) {
+  .all header .navbar {
+    width: 100%;
+  }
+}
+
+.all header .navbar .logo {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+  width: 190px;
+}
+
+@media (max-width: 1560px) {
+  .all header .navbar .logo {
+    width: 60px;
+  }
+}
+
+@media (max-width: 737px) {
+  .all header .navbar .logo {
+    width: 30px;
+  }
+}
+
+.all header .navbar .logo:hover .microsoft-red {
+  fill: #f35325;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.all header .navbar .logo:hover .microsoft-green {
+  fill: #81bc06;
+  -webkit-transition-delay: 0.17s;
+          transition-delay: 0.17s;
+}
+
+.all header .navbar .logo:hover .microsoft-blue {
+  fill: #04a5ee;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.all header .navbar .logo:hover .microsoft-yellow {
+  fill: #ffba08;
+  -webkit-transition-delay: 0.17s;
+          transition-delay: 0.17s;
+}
+
+.all header .navbar .navtext a {
+  width: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 200ms linear 0ms;
+  transition: color 200ms linear 0ms;
+}
+
+.all header .navbar .navtext a:hover {
+  color: #0078d4;
+}
+
+.all header .navbar .navR {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 120px 0px 420px;
+}
+
+@media (max-width: 1460px) {
+  .all header .navbar .navR {
+    padding: 0px 60px 0px 120px;
+  }
+}
+
+@media (max-width: 1126px) {
+  .all header .navbar .navR {
+    padding: 0px 0px 0px 120px;
+  }
+}
+
+@media (max-width: 843px) {
+  .all header .navbar .navR {
+    display: contents;
+  }
+}
+
+.all header .navbar .navR ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+@media (max-width: 843px) {
+  .all header .navbar .navR ul {
+    display: none;
+  }
+}
+
+.all header .navbar .navR ul a {
+  text-decoration: none;
+}
+
+.all header .navbar .navR ul a li {
+  width: auto;
+  color: white;
+  font-size: 16px;
+  line-height: 49px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+.all header .navbar .navR ul a li:hover {
+  color: #258ede;
+}
+
+.all main {
+  width: 100%;
+}
+
+.all main .banner1 {
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 1579px) {
+  .all main .banner1 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1125px) {
+  .all main .banner1 {
+    width: 95%;
+  }
+}
+
+.all main .banner1 .content1 {
+  width: 100%;
+  margin: 145px 0px 60px;
+}
+
+@media (max-width: 714px) {
+  .all main .banner1 .content1 {
+    margin: 62px 0px 60px;
+  }
+}
+
+.all main .banner1 .content1 .text1 {
+  width: 430px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@media (max-width: 714px) {
+  .all main .banner1 .content1 .text1 {
+    width: 600px;
+  }
+}
+
+.all main .banner1 .content1 .text1 .Design {
+  font-size: 64px;
+  line-height: 80px;
+  color: #4fe5ff;
+  font-weight: 600;
+  margin: 0px 0px 0px -6px;
+}
+
+@media (max-width: 714px) {
+  .all main .banner1 .content1 .text1 .Design {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.all main .banner1 .content1 .text1 .text2 {
+  margin: 100px 0px 30px;
+}
+
+.all main .banner1 .content1 .text1 p {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px 0px 24px;
+}
+
+.all main .banner1 .content1 .img1 {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 740px) {
+  .all main .banner1 .content1 .img1 {
+    display: none;
+  }
+}
+
+.all main .banner1 .content1 .img1 .imgmid {
+  margin: 0 120px;
+}
+
+@media (max-width: 1537px) {
+  .all main .banner1 .content1 .img1 .imgmid {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1060px) {
+  .all main .banner1 .content1 .img1 .imgmid {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  .all main .banner1 .content1 .img1 .imgmid {
+    display: none;
+  }
+}
+
+.all main .banner1 .content1 .img1 .imgL {
+  margin-top: 224px;
+}
+
+@media (max-width: 1537px) {
+  .all main .banner1 .content1 .img1 .imgL {
+    margin: 300px 90px 0 0px;
+  }
+}
+
+@media (max-width: 1409px) {
+  .all main .banner1 .content1 .img1 .imgL {
+    display: none;
+  }
+}
+
+.all main .banner1 .content1 .img1 .imgR {
+  margin-top: -574px;
+}
+
+@media (max-width: 1537px) {
+  .all main .banner1 .content1 .img1 .imgR {
+    margin: -500px 0px 0 60px;
+  }
+}
+
+@media (max-width: 1409px) {
+  .all main .banner1 .content1 .img1 .imgR {
+    display: none;
+  }
+}
+
+.all main .banner2 {
+  width: 100%;
+  position: relative;
+}
+
+.all main .banner2 .oo::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #5fcf63;
+  z-index: 0;
+}
+
+.all main .banner2::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #2280c8;
+  z-index: 0;
+}
+
+.all main .banner2 .cards {
+  width: 90%;
+  margin: auto;
+  z-index: 2;
+}
+
+.all main .banner2 .cards a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 1846px) {
+  .all main .banner2 .cards {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1219px) {
+  .all main .banner2 .cards {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1125px) {
+  .all main .banner2 .cards {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1519px) {
+  .all main .banner2 .cards .eDewNd {
+    margin-bottom: 60px;
+  }
+}
+
+.all main .banner2 .cards .logo {
+  padding: 0 0 150px 0px;
+}
+
+@media (max-width: 1519px) {
+  .all main .banner2 .cards .logo {
+    padding: 0 0 60px 0px;
+  }
+}
+
+.all main .banner2 .cards .card1 {
+  background-color: #258ede;
+}
+
+.all main .banner2 .cards .card1:hover {
+  background-color: #0c75c5;
+}
+
+.all main .banner2 .cards .card2 {
+  background-color: #4fe5ff;
+}
+
+.all main .banner2 .cards .card2:hover {
+  background-color: #36cce6;
+}
+
+.all main .banner2 .cards .card3 {
+  background-color: #cf8fff;
+}
+
+.all main .banner2 .cards .card3:hover {
+  background-color: #b676e6;
+}
+
+.all main .banner2 .cards .card4 {
+  background-color: #69e56e;
+}
+
+.all main .banner2 .cards .card4:hover {
+  background-color: #50cc55;
+}
+
+.all main .parallax-1 {
+  padding-top: 1px;
+  height: 768px;
+  min-height: 768px;
+  background-image: url("https://www.microsoft.com/design/fluent/assets/images/msft-verge-fluent.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.all main .parallax-1 .chia {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 40px;
+}
+
+.all main .parallax-1 .dtNxrw {
+  color: black;
+  font-size: 128px;
+  line-height: 150px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.all main .parallax-1 .fNmtKl {
+  width: 100%;
+  max-width: 384px;
+  padding: 0px 16px 0px 24px;
+}
+
+.all main .parallax-1 .fNmtKl p {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.all main .banner3 {
+  width: 100%;
+  margin: auto;
+  background-color: #191919;
+  color: white;
+  position: relative;
+}
+
+.all main .banner3 .ball {
+  width: 100%;
+  padding: 0 6.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+}
+
+@media (max-width: 1519px) {
+  .all main .banner3 .ball {
+    margin: auto;
+  }
+  .all main .banner3 .ball img {
+    max-width: 100%;
+    padding: 5%;
+  }
+}
+
+.all main .banner3 .ball .con4line {
+  position: absolute;
+  right: 140px;
+  top: -200px;
+}
+
+.all main .banner3 .ballin {
+  width: 100%;
+  padding: 0 6.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.all main .banner3 .ballin .ballin1 {
+  width: 430px;
+  padding-left: 100px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.all main .banner3 .ballin .ballin1 p {
+  margin: 0 !important;
+}
+
+.all main .banner3 .ballin .jQvmMT {
+  position: absolute;
+  bottom: 113px;
+  left: 430px;
+}
+
+.all main .banner3 .mountain .mountain1 {
+  position: relative;
+}
+
+.all main .banner3 .mountain .mountain1 .jVFBzI {
+  width: 80%;
+  margin: 0px auto;
+  position: absolute;
+  bottom: 80px;
+  left: 150px;
+}
+
+.all main .banner3 .mountain .mountain1 .jVFBzI h2 {
+  color: #191919;
+  font-size: 128px;
+  line-height: 144px;
+  font-weight: 600;
+  margin: 0px 0px 0px 26px;
+}
+
+.all main .parallax2 {
+  min-height: 948px;
+  background-image: url("https://www.microsoft.com/design/fluent/assets/images/clouds.jpg");
+  height: 948px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.all main .parallax2 .bpFwzp {
+  position: absolute;
+  top: -240px;
+  right: 600px;
+}
+
+.all main .parallax2 .bpFwzp .cmaxoy {
+  position: absolute;
+  left: 2px;
+  z-index: 2;
+}
+
+.all main .parallax2 .bpFwzp .fpFlWr {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.all main .parallax2 .de {
+  position: absolute;
+  top: 200px;
+  left: 130px;
+  font-size: 395px;
+  line-height: 1;
+  color: black;
+  font-weight: 600;
+}
+
+.all main .parallax2 .sign {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  font-size: 395px;
+  line-height: 1;
+  color: black;
+  font-weight: 600;
+}
+
+.all main .parallax2 .visible {
+  position: absolute;
+  top: 550px;
+  left: 460px;
+}
+
+.all main .banner4 {
+  width: 100%;
+  background-color: #cccccc;
+  min-height: 820px;
+  position: relative;
+}
+
+.all main .banner4 .gJoSmV {
+  width: 1536px;
+  margin: 0px auto;
+}
+
+.all main .banner4 .gJoSmV .hqRDey {
+  width: 100%;
+  padding: 140px 40px 0px 8px;
+}
+
+.all main .banner4 .gJoSmV .hqRDey .fTiOJO {
+  color: black;
+  font-size: 128px;
+  line-height: 150px;
+  font-weight: 600;
+}
+
+.all main .banner4 .gJoSmV .bZChdq {
+  width: 100%;
+  margin: 60px 0px 0px;
+}
+
+.all main .banner4 .gJoSmV .bZChdq .bQrvIW {
+  width: 100%;
+  max-width: 384px;
+  padding: 0px 16px;
+}
+
+.all main .banner4 .gJoSmV .bZChdq .bQrvIW p {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.all main .banner4 .ksmuHU {
+  width: 100%;
+  position: absolute;
+  top: 140px;
+  right: -950px;
+  z-index: 2;
+}
+
+.all main .banner4 .ksmuHU img {
+  max-width: 960px;
+}
+
+.all main .parallax3 {
+  min-height: 768px;
+  background-image: url("https://www.microsoft.com/design/fluent/assets/images/space.jpg");
+  height: 768px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.all main .parallax3 .tSVZW {
+  position: absolute;
+  top: -95px;
+  left: 460px;
+}
+
+.all main .parallax3 .GTTqH {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+.all main .parallax3 .ihVGjv {
+  position: absolute;
+  top: -130px;
+  left: 750px;
+}
+
+.all main .parallax3 .huvzO {
+  position: absolute;
+  top: 565px;
+  right: 223px;
+}
+
+.all main .parallax3 .bIEKhw {
+  position: absolute;
+  top: 300px;
+  right: 350px;
+}
+
+.all main .cards-2 {
+  width: 90%;
+  margin: auto;
+}
+
+.all main .cards-2 a {
+  text-decoration: none;
+}
+
+.all main .cards-2 svg {
+  max-width: 20px;
+  height: auto;
+}
+
+.all main .cards-2 p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.all main .cards-2 .MicrosoftDesign {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all main .cards-2 .cardboder {
+  height: 85%;
+}
+
+.all main .cards-2 .carda {
+  background-color: black;
+  color: white;
+}
+
+.all main .cards-2 .carda p {
+  width: 100%;
+  margin: 2px 0px 0px;
+}
+
+.all main .cards-2 .carda path {
+  fill: white;
+}
+
+.all main .cards-2 .carda:hover {
+  background-color: white;
+  color: black;
+}
+
+.all main .cards-2 .carda:hover path {
+  fill: black;
+}
+
+.all main .cards-2 .cardb {
+  background-color: #393939;
+  color: white;
+}
+
+.all main .cards-2 .cardb p {
+  width: 100%;
+  margin: 2px 0px 0px;
+}
+
+.all main .cards-2 .cardb path {
+  fill: white;
+}
+
+.all main .cards-2 .cardb:hover {
+  background-color: white;
+  color: black;
+}
+
+.all main .cards-2 .cardb:hover path {
+  fill: black;
+}
+
+.all main .cards-2 .cardc {
+  background-color: #767676;
+  color: black;
+}
+
+.all main .cards-2 .cardc p {
+  width: 100%;
+  margin: 2px 0px 0px;
+}
+
+.all main .cards-2 .cardc:hover {
+  background-color: white;
+}
+
+.all main .cards-2 .cardd {
+  background-color: #cccccc;
+  color: black;
+}
+
+.all main .cards-2 .cardd p {
+  width: 100%;
+  margin: 2px 0px 0px;
+}
+
+.all main .cards-2 .cardd:hover {
+  background-color: white;
+}
+
+.all main .banner5 {
+  width: 90%;
+  margin: 0px auto;
+  margin: 0px auto;
+  color: white;
+  padding: 200px 0px 200px;
+}
+
+.all main .banner5 span {
+  color: white;
+}
+
+.all main .banner5 .eTSiv {
+  width: 575px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.all main .banner5 .gRZKCy {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 82px 35px 208px;
+}
+
+.all footer {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.all footer .logo {
+  fill: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+  width: 190px;
+}
+
+@media (max-width: 1560px) {
+  .all footer .logo {
+    width: 60px;
+  }
+}
+
+@media (max-width: 737px) {
+  .all footer .logo {
+    width: 30px;
+  }
+}
+
+.all footer .logo:hover .microsoft-red {
+  fill: #f35325;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.all footer .logo:hover .microsoft-green {
+  fill: #81bc06;
+  -webkit-transition-delay: 0.17s;
+          transition-delay: 0.17s;
+}
+
+.all footer .logo:hover .microsoft-blue {
+  fill: #04a5ee;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.all footer .logo:hover .microsoft-yellow {
+  fill: #ffba08;
+  -webkit-transition-delay: 0.17s;
+          transition-delay: 0.17s;
+}
+
+.all footer .mid {
+  height: 48px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 100px 0px 0px;
+}
+
+.all footer .mid .ktsCrW {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.all footer .mid .ktsCrW a {
+  width: auto;
+  color: white;
+  font-size: 12px;
+  line-height: 48px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+.all footer .mid .ktsCrW a::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  width: 100%;
+  opacity: 0;
+  height: 1px;
+  background-color: white;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+}
+
+.all footer .mid .ktsCrW a:hover::after {
+  opacity: 1;
+  bottom: -2px;
+}
+
+.all footer .ewmKjL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  margin: 0;
+}
+
+.all footer .ewmKjL a {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.all footer .ewmKjL svg {
+  width: 20px;
+}
+
+.all footer .ewmKjL path {
+  fill: white;
+  -webkit-transition: fill 200ms linear 0ms;
+  transition: fill 200ms linear 0ms;
+}
+
+[data-aos="new-animation"] {
+  opacity: 1;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transform: translateY(500px);
+          transform: translateY(500px);
+}
+
+[data-aos="new-animation"].aos-animate {
+  opacity: 1;
+}
+
+[data-aos="new-animation"].aos-animate {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,721 @@
+@import'_all';
+.all{
+    width: 100%;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    header{
+        width: 90%;
+        margin: 0 auto;
+        @media (max-width: 1560px){
+            width: 97%;
+        }
+        .navbar{
+            background-color: black;
+            width:100%;
+            height: 48px;
+            margin: 0 auto;
+            @media (max-width: 1579px){
+                width: 90%;
+            }
+            @media (max-width: 1125px){
+                width: 100%;
+            }
+            .logo{
+                fill: rgb(255, 255, 255);
+                transition: all 200ms linear 0ms;
+                width: 190px;
+                @media (max-width: 1560px){
+                    width: 60px;
+                }
+                @media (max-width: 737px){
+                    width: 30px;
+                }
+                &:hover{
+                    .microsoft-red{
+                        fill: rgb(243, 83, 37);
+                        transition-delay: 0.15s;
+                    }
+                    .microsoft-green{
+                        fill: rgb(129, 188, 6);
+                        transition-delay: 0.17s;
+                    }
+                    .microsoft-blue{
+                        fill: rgb(4, 165, 238);
+                        transition-delay: 0.15s;
+                    }
+                    .microsoft-yellow{
+                        fill: rgb(255, 186, 8);
+                        transition-delay: 0.17s;
+                    }
+                }
+            }//LOGO
+            .navtext a{
+                &:hover{
+                    color: rgb(0, 120, 212);
+                }
+                width: auto;
+                align-content: center;
+                flex: 0 0 auto;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                transition: color 200ms linear 0ms;
+            }//navL
+            .navR { 
+                flex: 1 1 auto;
+                padding: 0px 120px 0px 420px;
+                @media (max-width: 1460px){
+                    padding: 0px 60px 0px 120px; 
+                }
+                @media (max-width: 1126px){
+                    padding: 0px 0px 0px 120px; 
+                }
+                @media (max-width: 843px){
+                    display: contents;
+                }
+                ul{
+                    width: 100%;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    @media (max-width: 843px){
+                        display: none;
+                    }
+                    a{  
+                        text-decoration: none;
+                        li{
+                        &:hover{
+                            color: rgb(37, 142, 222);
+                        }
+                        width: auto;
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        line-height: 49px;
+                        font-weight: 600;
+                        margin: 0px;
+                        padding: 0px;
+                        transition: all 200ms linear 0ms;
+                        }
+                    } 
+                }
+            }//navr 
+        }
+    }//header
+    main{
+        width: 100%;
+        
+        .banner1{
+            width: 90%;
+             margin: auto;
+             @media (max-width: 1579px){
+                 width: 90%;
+             }
+             @media (max-width: 1125px){
+                width: 95%;
+            }
+            .content1{
+                width: 100%;
+                margin: 145px 0px 60px;
+                @media (max-width: 714px){
+                    margin: 62px 0px 60px;   
+                }
+                .text1{
+                    width: 430px;
+                    flex: 0 0 auto;
+                    @media (max-width: 714px){
+                        width: 600px; 
+                         
+                    }
+                    .Design{
+                        font-size: 64px;
+                        line-height: 80px;
+                        color: rgb(79, 229, 255);
+                        font-weight: 600;
+                        margin: 0px 0px 0px -6px;
+                        @media (max-width: 714px){
+                            font-size: 48px;
+                            line-height: 58px; 
+                        }
+                    }
+                    .text2{
+                        margin: 100px 0px 30px;
+                    }
+                    p{  
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 600;
+                        margin: 0px 0px 24px;
+                    }
+                }
+                .img1{
+                    width: 50%;
+                    text-align: center;
+                    position: relative;
+                    @media (max-width: 740px){
+                        display: none;
+                    }
+                    .imgmid{
+                       margin: 0 120px;
+                       
+                       @media (max-width: 1537px){
+                        margin: 0 ;
+                       }
+                       @media (max-width: 1060px){
+                        max-width: 100%;
+                       }
+                       @media (max-width: 730px){
+                        display: none;
+                       }
+                    }
+                    .imgL{
+                        margin-top: 224px;
+                        @media (max-width: 1537px){
+                            margin: 300px 90px 0 0px;
+                           }
+                        @media (max-width: 1409px){
+                            display: none;
+                        }
+                        
+                    }
+                    .imgR{
+                        margin-top: -574px;
+                        @media (max-width: 1537px){
+                            margin: -500px 0px 0 60px;
+                           }
+                        @media (max-width: 1409px){
+                            display: none;
+                        }
+                    }
+                }
+            }//content1
+        }
+        .banner2{
+            width: 100%;
+            position: relative;
+            .oo{
+                &::after{
+                    content: "";
+                    width: 50%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    background-color: rgb(95, 207, 99);
+                    z-index: 0;
+            
+                }
+            }
+            &::before{
+                content: "";
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color:rgb(34, 128, 200);
+                z-index: 0;
+            }
+            
+            .cards{
+                width: 90%;
+                margin: auto;
+                z-index: 2;
+                a{
+                    color:black;
+                    text-decoration:none;
+                }
+                @media (max-width: 1846px){
+                    width: 80%;
+                }
+                @media (max-width: 1219px){
+                    width: 95%;
+                }
+                @media (max-width: 1125px){
+                    width: 100%;
+                }
+                .eDewNd{
+                    @media (max-width: 1519px){
+                        margin-bottom: 60px;
+                    }  
+                }
+                .logo{
+                    padding: 0 0 150px 0px;
+                    @media (max-width: 1519px){
+                        padding: 0 0 60px 0px; 
+                    }
+                }
+                .card1{
+                    background-color: rgb(37, 142, 222);
+                    &:hover{
+                        background-color: rgb(12, 117, 197);
+                    }
+                }
+                .card2{
+                    background-color: rgb(79, 229, 255);
+                    &:hover{
+                        background-color: rgb(54, 204, 230);
+                    }
+                }
+                .card3{
+                    background-color: rgb(207, 143, 255);
+                    &:hover{
+                        background-color: rgb(182, 118, 230);
+                    }
+                }
+                .card4{
+                    background-color: rgb(105, 229, 110);
+                    &:hover{
+                        background-color: rgb(80, 204, 85);
+                    }
+                }
+            }
+        }
+        .parallax-1{
+                padding-top: 1px;
+                height: 768px;
+                min-height: 768px;
+                background-image: url("https://www.microsoft.com/design/fluent/assets/images/msft-verge-fluent.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                .chia{
+                    width: 90%;
+                    margin: 0px auto; 
+                    margin-top: 40px;
+                }
+                .dtNxrw {
+                    color: rgb(0, 0, 0);
+                    font-size: 128px;
+                    line-height: 150px;
+                    font-weight: 600;
+                    margin-bottom: 100px;
+                }
+                .fNmtKl {
+                    width: 100%;
+                    max-width: 384px;
+                    padding: 0px 16px 0px 24px;
+                    p {
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    margin: 0px;
+                    }
+                }
+        }
+        .banner3 {
+            width: 100%;
+            margin: auto;
+            background-color:rgb(25, 25, 25);
+            color: white;
+            position: relative;
+            .ball{
+                @media (max-width: 1519px){
+                    margin: auto;
+                    img{
+                        max-width: 100%;
+                        padding: 5%;
+                    }
+                }
+                width: 100%;
+                padding: 0 6.5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 80px 0;
+                .con4line{
+                    position: absolute;
+                    right: 140px;
+                    top: -200px;
+                }
+            }
+        
+            .ballin{
+                width: 100%;
+                padding: 0 6.5%;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                .ballin1{
+                    width: 430px;
+                    padding-left: 100px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    p{
+                        margin: 0 !important;
+                    }
+                }
+                .jQvmMT {
+                    position: absolute;
+                    bottom: 113px;
+                    left: 430px;
+                }
+            }
+            .mountain{
+                .mountain1{
+                    position: relative;
+                    .jVFBzI {
+                        width: 80%;
+                        margin: 0px auto;
+                        position: absolute;
+                        bottom:80px;
+                        left: 150px;
+                      h2{
+                        color: rgb(25, 25, 25);
+                        font-size: 128px;
+                        line-height: 144px;
+                        font-weight: 600;
+                        margin: 0px 0px 0px 26px;
+                      }
+                    }
+                }
+            }        
+            
+        }
+        .parallax2{
+            min-height: 948px;
+            background-image: url("https://www.microsoft.com/design/fluent/assets/images/clouds.jpg");
+            height: 948px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .bpFwzp{
+                position: absolute;
+                top: -240px;
+                right: 600px;
+                .cmaxoy{
+                    position: absolute;
+                    left: 2px;
+                    z-index: 2;
+                }
+                .fpFlWr{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            .de{
+                position: absolute;
+                top: 200px;
+                left: 130px;
+                font-size: 395px;
+                line-height: 1;
+                color: rgb(0, 0, 0);
+                font-weight: 600;
+            }
+            .sign{
+                position: absolute;
+                top: 300px;
+                right:100px;
+                font-size: 395px;
+                line-height: 1;
+                color: rgb(0, 0, 0);
+                font-weight: 600;
+            }
+            .visible{
+                position: absolute;
+                top: 550px;
+                left: 460px;
+            }
+        }
+        .banner4{
+            width: 100%;
+            background-color: rgb(204, 204, 204);
+            min-height: 820px;
+            position: relative;
+            .gJoSmV{
+                width: 1536px;
+                margin: 0px auto;
+                .hqRDey{
+                    width: 100%;
+                    padding: 140px 40px 0px 8px;
+                    .fTiOJO {
+                        color: rgb(0, 0, 0);
+                        font-size: 128px;
+                        line-height: 150px;
+                        font-weight: 600;
+                    }
+                }
+                .bZChdq{
+                    width: 100%;
+                    margin: 60px 0px 0px;
+                    .bQrvIW{ 
+                        width: 100%;
+                        max-width: 384px;
+                        padding: 0px 16px;               
+                        p {
+                        color: rgb(0, 0, 0);
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 600;
+                        margin: 0px;
+                        }
+                    }
+                }
+            }
+            .ksmuHU {
+                width:100%;
+                position: absolute;
+                top: 140px;
+                right: -950px;
+                z-index: 2;
+                img{
+                    max-width: 960px; 
+                }
+            }
+        }
+        .parallax3{
+            min-height: 768px;
+            background-image: url("https://www.microsoft.com/design/fluent/assets/images/space.jpg");
+            height: 768px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+            .tSVZW{
+                position: absolute;
+                top: -95px;
+                left: 460px;
+            }
+            .GTTqH{
+                position: absolute;
+                top: 200px;
+                left: 300px;
+            }
+            .ihVGjv{
+                position: absolute;
+                top: -130px;
+                left: 750px;
+            }
+            .huvzO{
+                position: absolute;
+                top: 565px;
+                right: 223px;
+            }
+            .bIEKhw{
+                position: absolute;
+                top:300px;
+                right: 350px;
+            }
+        }
+        .cards-2{
+            width: 90%;
+            margin: auto;
+            a{
+                text-decoration:none;
+            }
+            svg{
+                max-width: 20px;
+                height: auto;
+            }
+            p{
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 600;
+            }
+            .MicrosoftDesign{
+                width: 100%;
+                display: flex;
+            }
+            .cardboder{
+               height: 85%;
+            }
+            .carda{
+                p{
+                    width: 100%;
+                    margin: 2px 0px 0px;                  
+                }
+                path{
+                    fill: white;
+                }
+                background-color: rgb(0, 0, 0);
+                color: white;
+                &:hover{
+                    path{
+                        fill: black;
+                    }
+                    background-color: white;
+                    color: black; 
+                }
+            }
+            .cardb{
+                p{
+                    width: 100%;
+                    margin: 2px 0px 0px;                  
+                }
+                path{
+                    fill: white;
+                }
+                background-color: rgb(57, 57, 57);
+                color: white;
+                &:hover{
+                    path{
+                        fill: black;
+                    }
+                    background-color: white;
+                    color: black; 
+                }
+            }
+            .cardc{
+                p{
+                    width: 100%;
+                    margin: 2px 0px 0px;                  
+                }
+                background-color: rgb(118, 118, 118);
+                color: black;
+                &:hover{
+                    background-color: white;
+                }
+            }
+            .cardd{
+                p{
+                    width: 100%;
+                    margin: 2px 0px 0px;                  
+                }
+                background-color: rgb(204, 204, 204);
+                color: black;
+                &:hover{
+                    background-color: white;
+                }
+            }
+
+        }
+        .banner5{
+            width: 90%;
+            margin: 0px auto;
+            margin: 0px auto;
+            color: white;
+            padding: 200px 0px 200px;
+            span{
+                color: white;
+            }
+            .eTSiv {
+                width: 575px;
+                flex: 0 0 auto;
+            }
+            .gRZKCy{
+                flex: 1 1 auto;
+                padding: 0px 82px 35px 208px;
+            }
+        }
+    }//main
+    footer{
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0px auto;
+        .logo{
+            fill: rgb(255, 255, 255);
+            transition: all 200ms linear 0ms;
+            width: 190px;
+            @media (max-width: 1560px){
+                width: 60px;
+            }
+            @media (max-width: 737px){
+                width: 30px;
+            }
+            &:hover{
+                .microsoft-red{
+                    fill: rgb(243, 83, 37);
+                    transition-delay: 0.15s;
+                }
+                .microsoft-green{
+                    fill: rgb(129, 188, 6);
+                    transition-delay: 0.17s;
+                }
+                .microsoft-blue{
+                    fill: rgb(4, 165, 238);
+                    transition-delay: 0.15s;
+                }
+                .microsoft-yellow{
+                    fill: rgb(255, 186, 8);
+                    transition-delay: 0.17s;
+                }
+            }
+        }//LOGO
+        .mid{
+            height: 48px;
+            flex: 1 1 auto;
+            padding: 0px 100px 0px 0px;
+            .ktsCrW {
+                width: 100%;
+                display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                a{
+                    width: auto;
+                    color: rgb(255, 255, 255);
+                    font-size: 12px;
+                    line-height: 48px;
+                    font-weight: 400;
+                    margin: 0px;
+                    padding: 0px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        bottom: -6px;
+                        width: 100%;
+                        opacity: 0;
+                        height: 1px;
+                        background-color: rgb(255, 255, 255);
+                        transition: all 200ms linear 0ms;
+                    }
+                    &:hover::after {
+                        opacity: 1;
+                        bottom: -2px;
+                    }
+                }
+            }
+        }
+        .ewmKjL {
+            display: flex;
+            height: 48px;
+            margin: 0;
+            a{
+                width: 48px;
+                height: 48px;
+                display: flex;
+                -webkit-box-pack: end;
+                justify-content: flex-end;
+                -webkit-box-align: center;
+                align-items: center;  
+            }
+            svg{
+                width: 20px;  
+            }
+            path{
+                fill: rgb(255, 255, 255);
+                transition: fill 200ms linear 0ms;
+            }
+        }
+    }//footer
+}//all
+[data-aos="new-animation"] {
+    opacity: 1;
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+      transform: translateY(500px);
+  
+      &.aos-animate {
+        transform: translateY(0);
+      }
+    
+  }//自訂的aos

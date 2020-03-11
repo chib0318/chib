@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            top: 20%;
+            left: 40%;
+        }
+
+    </style>
+</head>
+
+<body style="height: 500vh;">
+
+    <!-- <div class="box lax" data-lax-preset="spin zoomIn"></div> -->
+    <div class="box lax" data-lax-scale-x="0 2 , 500 1"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <script>
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
+</body>
+
+</html>
