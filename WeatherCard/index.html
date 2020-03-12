@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .all{
+            width: 100%;
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+            align-items: center;
+        }
+        .boxa{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+        }
+        .card{
+            width: 200px;
+            height: 300px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 3px solid black;
+            margin-bottom: 20px;
+        }
+       .sun{
+           display: none;
+       }
+       .hot{
+           display:none;
+       }
+       .mo{
+           margin-right: 20px;
+       }
+       .time{
+           font-size: 24px;
+           margin-bottom: 36px;
+       }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="time"></div>
+        <div class="boxa">
+        <!-- <div class="card mo">
+            <div class="card-img">
+                <img class="sun" src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="">
+               
+               </div>
+            <div class="card-content">
+                <h1>台中市</h1>
+                <h2>多雲</h2>
+                <span>最高溫</span>
+                <span>最低溫</span>
+                <div>幹話</div>
+            </div>
+        </div> -->
+    </div> 
+    </div>
+    <script>
+                fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B97A384A-B70F-4724-92C4-ED7E2280EC3F')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(waether_arry) {
+                    // console.log(myJson);
+                    var locations = waether_arry.records.location
+                    // console.log(locations);
+                    locations.forEach(location => {
+                      var locationName= location.locationName;
+                      var Wx = location.weatherElement[0].time[0].parameter.parameterName;
+                      var MaxT = location.weatherElement[4].time[0].parameter.parameterName;
+                      var MinT = location.weatherElement[2].time[0].parameter.parameterName;
+                      var CI = location.weatherElement[3].time[0].parameter.parameterName;
+                      var code = location.weatherElement[0].time[0].parameter.parameterValue;
+                      
+                
+                    if(code == '1'||code == '5'||code == '6'||code == '7'||code == '11'){
+                        var icon ='https://ssl.gstatic.com/onebox/weather/64/rain_s_cloudy.png'
+
+                    }else if(code == '2'||code == '3'||code == '4'){
+                        var icon ='https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png'
+                    }
+               
+                    var all = document.querySelector('.boxa')
+
+                    all.innerHTML += `
+                   
+                    <div class="card mo">
+                        <div class="card-img">
+                            <img  src="${icon}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h1>${locationName}</h1>
+                            <h2>${Wx}</h2>
+                            <span>最高溫${MaxT}c</span>
+                            <span>最低溫${MinT}c</span>
+                            <div>${CI}</div>
+                        </div>
+                    </div>
+                
+                    `
+
+                });
+                });
+                var today = new Date();
+                var day =today.getFullYear()+ '年' +(today.getMonth()+1) + '月' + today.getDate();
+                var xxtime =today.getHours()+ ':'  + today.getMinutes();
+                var time =document.querySelector('.time');
+                time.innerHTML += '現在時間' + day +' '+ xxtime;
+    </script>
+</body>
+</html>
