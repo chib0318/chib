@@ -1,3 +1,6 @@
+*{
+    box-sizing:border-box;
+}
 .all{
     font-family: 'Noto Sans JP', sans-serif;
     .banner{
@@ -5,16 +8,40 @@
         width: 100%;
         height: 100vh;
         background: url("../img/banner.jpg");
+        overflow: hidden;
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
-        h1{
+        .banne_png{
+            .layer1{
+                padding: 500px 0 0 900px;
+                box-sizing:border-box;
+                img{
+                    width: 700px;
+                }
+            }
+            .layer2{
+                padding: 50px 0 0 1000px;
+                img{
+                    width: 700px;
+                }
+            }
+            .layer3{
+                margin-left: -30%;
+                padding-top: 90px;
+                img{
+                    width: 900px;
+                }
+            }
+        }
+        h1{ 
+            position: absolute;
             color: wheat;
             font-size: 9rem;
             text-shadow:6px 6px 12px rgb(105,105,105);
-            z-index: 2;
+            z-index: 3;
         }
         .clouds{
             position: absolute;
@@ -23,6 +50,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            z-index: 2;
             img{
                 position: absolute;
                 left: -600px;

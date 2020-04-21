@@ -88,7 +88,14 @@
 
         <section>
             <div class="banner d-flex justify-content-center align-items-center">
-                <h1>天空の城ラピュタ</h1>
+
+                <ul id="scene" class="banne_png">
+                    <li class="layer1" data-depth="0.6"><img src="./img/Castle-1-850x478.png"></li>
+                    <li class="layer2" data-depth="-0.6"><img src="./img/castle-in-the-sky-anime-studio-ghibli-wallpaper-preview.png"></li>
+                    <li class="layer3" data-depth="0.6"><img src="./img/3e822c4379ab9699cfb9ccc9f733d400.png"></li>
+                </ul>
+                <h1>天空の城ラピュタ
+                </h1>
                 <div class="clouds">
                     <img src="./img/cloud1.png" style="--i:1;" alt="">
                     <img src="./img/cloud2.png" style="--i:2;" alt="">
@@ -113,7 +120,7 @@
         </section>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="assets/popper/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -126,7 +133,10 @@
     <script>
 
     </script>
-
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
 
 </body>
 
