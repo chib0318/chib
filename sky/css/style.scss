@@ -12,7 +12,9 @@
         background-position: bottom;
         h1{
             color: wheat;
-            font-size: 138px;
+            font-size: 9rem;
+            text-shadow:6px 6px 12px rgb(105,105,105);
+            z-index: 2;
         }
         .clouds{
             position: absolute;
@@ -23,8 +25,9 @@
             overflow: hidden;
             img{
                 position: absolute;
-                bottom: -100px;
-                max-width: 100%;
+                left: -600px;
+                bottom: -250px;
+                width:140%;
                 animation: animate calc(6s * var(--i)) linear infinite;
                 @keyframes animate{
                     0%{
@@ -35,6 +38,6 @@
                     }
                 }
             }
-        }
+        }//clouds_left
     }//banner
 }//all

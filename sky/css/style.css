@@ -16,7 +16,9 @@
 
 .all .banner h1 {
   color: wheat;
-  font-size: 138px;
+  font-size: 9rem;
+  text-shadow: 6px 6px 12px dimgray;
+  z-index: 2;
 }
 
 .all .banner .clouds {
@@ -30,8 +32,9 @@
 
 .all .banner .clouds img {
   position: absolute;
-  bottom: -100px;
-  max-width: 100%;
+  left: -600px;
+  bottom: -250px;
+  width: 140%;
   -webkit-animation: animate calc(6s * var(--i)) linear infinite;
           animation: animate calc(6s * var(--i)) linear infinite;
 }
