@@ -20,18 +20,19 @@
   background-position: bottom;
 }
 
-.all .banner .banne_png .layer1 {
-  padding: 500px 0 0 900px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.all .banner #scene1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
 }
 
-.all .banner .banne_png .layer1 img {
+.all .banner #scene1 img {
   width: 700px;
 }
 
 .all .banner .banne_png .layer2 {
-  padding: 50px 0 0 1000px;
+  padding: 50px 0 300px 1100px;
 }
 
 .all .banner .banne_png .layer2 img {
@@ -62,7 +63,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1;
 }
 
 .all .banner .clouds img {

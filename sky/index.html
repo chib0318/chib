@@ -88,9 +88,10 @@
 
         <section>
             <div class="banner d-flex justify-content-center align-items-center">
-
+                <ul id="scene1" class="banne_png1">
+                    <li class="layer1" data-depth="1.5"><img src="./img/Castle-1-850x478.png"></li>
+                </ul>
                 <ul id="scene" class="banne_png">
-                    <li class="layer1" data-depth="0.6"><img src="./img/Castle-1-850x478.png"></li>
                     <li class="layer2" data-depth="-0.6"><img src="./img/castle-in-the-sky-anime-studio-ghibli-wallpaper-preview.png"></li>
                     <li class="layer3" data-depth="0.6"><img src="./img/3e822c4379ab9699cfb9ccc9f733d400.png"></li>
                 </ul>
@@ -136,6 +137,8 @@
     <script>
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
+        var scene1 = document.getElementById('scene1');
+        var parallax = new Parallax(scene1);
     </script>
 
 </body>
