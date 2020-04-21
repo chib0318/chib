@@ -20,6 +20,12 @@
   background-position: bottom;
 }
 
+@media (max-width: 1295px) {
+  .all .banner {
+    padding-left: 20px;
+  }
+}
+
 .all .banner #scene1 {
   position: absolute;
   right: 0;
@@ -35,6 +41,12 @@
   padding: 50px 0 300px 1100px;
 }
 
+@media (max-width: 1103px) {
+  .all .banner .banne_png .layer2 {
+    display: none !important;
+  }
+}
+
 .all .banner .banne_png .layer2 img {
   width: 500px;
 }
@@ -42,6 +54,12 @@
 .all .banner .banne_png .layer3 {
   margin-left: -40%;
   padding-top: 90px;
+}
+
+@media (max-width: 1746px) {
+  .all .banner .banne_png .layer3 {
+    display: none !important;
+  }
 }
 
 .all .banner .banne_png .layer3 img {
@@ -54,6 +72,32 @@
   font-size: 9rem;
   text-shadow: 6px 6px 12px dimgray;
   z-index: 3;
+}
+
+@media (max-width: 1578px) {
+  .all .banner h1 {
+    font-size: 7rem;
+    -webkit-transform: 1s;
+            transform: 1s;
+  }
+}
+
+@media (max-width: 1160px) {
+  .all .banner h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 759px) {
+  .all .banner h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 523px) {
+  .all .banner h1 {
+    font-size: 2rem;
+  }
 }
 
 .all .banner .clouds {
