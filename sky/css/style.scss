@@ -22,8 +22,14 @@
             right: 0;
             bottom: 0;
             z-index: 2;
+            @media (max-width:1060px) {
+                right: unset;
+            }
             img{
                 width: 700px;
+                @media (max-width:1060px) {
+                    width: 500px;
+                }
             }
         }
         .banne_png{

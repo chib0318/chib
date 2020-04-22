@@ -33,8 +33,20 @@
   z-index: 2;
 }
 
+@media (max-width: 1060px) {
+  .all .banner #scene1 {
+    right: unset;
+  }
+}
+
 .all .banner #scene1 img {
   width: 700px;
+}
+
+@media (max-width: 1060px) {
+  .all .banner #scene1 img {
+    width: 500px;
+  }
 }
 
 .all .banner .banne_png .layer2 {
