@@ -712,12 +712,12 @@ section.lazy-placeholder:after {
 }
 .cid-rWGhQUIN1P .navbar {
   padding: .5rem 0;
-  background: #333333;
+  background: rgba(68, 131, 245,0.5);
   transition: none;
   min-height: 77px;
 }
 .cid-rWGhQUIN1P .navbar-dropdown.bg-color.transparent.opened {
-  background: #333333;
+  background: rgba(68, 131, 245,0.5);
 }
 .cid-rWGhQUIN1P a {
   font-style: normal;
