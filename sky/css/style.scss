@@ -3,6 +3,7 @@
 }
 .all{
     font-family: 'Noto Sans JP', sans-serif;
+    overflow: hidden;
     .banner{
         position: relative;
         width: 100%;
@@ -129,4 +130,5 @@
             }
         }
     }//main_1
+    
 }//all

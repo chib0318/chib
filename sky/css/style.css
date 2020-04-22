@@ -5,6 +5,7 @@
 
 .all {
   font-family: 'Noto Sans JP', sans-serif;
+  overflow: hidden;
 }
 
 .all .banner {
