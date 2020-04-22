@@ -77,8 +77,6 @@
 @media (max-width: 1578px) {
   .all .banner h1 {
     font-size: 7rem;
-    -webkit-transform: 1s;
-            transform: 1s;
   }
 }
 

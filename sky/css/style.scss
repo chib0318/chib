@@ -4,9 +4,6 @@
 .all{
     font-family: 'Noto Sans JP', sans-serif;
     .banner{
-        @media (max-width:1295px){
-            padding-left: 20px;
-        }
         position: relative;
         width: 100%;
         height: 100vh;
@@ -17,10 +14,10 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
+        @media (max-width:1295px){
+            padding-left: 20px;
+        }
         #scene1{
-            @media (max-width:1103px){
-
-            }
             position: absolute;
             right: 0;
             bottom: 0;
@@ -58,7 +55,6 @@
             z-index: 3;
             @media (max-width:1578px){
                 font-size: 7rem;
-                transform:1s;
             }
             @media (max-width:1160px){
                 font-size: 5rem;
