@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.all {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.all .banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/banner.jpg");
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media (max-width: 1295px) {
+  .all .banner {
+    padding-left: 20px;
+  }
+}
+
+.all .banner #scene1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.all .banner #scene1 img {
+  width: 700px;
+}
+
+.all .banner .banne_png .layer2 {
+  padding: 50px 0 300px 1100px;
+}
+
+@media (max-width: 1103px) {
+  .all .banner .banne_png .layer2 {
+    display: none !important;
+  }
+}
+
+.all .banner .banne_png .layer2 img {
+  width: 500px;
+}
+
+.all .banner .banne_png .layer3 {
+  margin-left: -40%;
+  padding-top: 90px;
+}
+
+@media (max-width: 1746px) {
+  .all .banner .banne_png .layer3 {
+    display: none !important;
+  }
+}
+
+.all .banner .banne_png .layer3 img {
+  width: 900px;
+}
+
+.all .banner h1 {
+  position: absolute;
+  color: wheat;
+  font-size: 9rem;
+  text-shadow: 6px 6px 12px dimgray;
+  z-index: 3;
+}
+
+@media (max-width: 1578px) {
+  .all .banner h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 1160px) {
+  .all .banner h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 759px) {
+  .all .banner h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 523px) {
+  .all .banner h1 {
+    font-size: 2rem;
+  }
+}
+
+.all .banner .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.all .banner .clouds img {
+  position: absolute;
+  left: -600px;
+  bottom: -250px;
+  width: 140%;
+  -webkit-animation: animate calc(6s * var(--i)) linear infinite;
+          animation: animate calc(6s * var(--i)) linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+  }
+}
+/*# sourceMappingURL=style.css.map */
