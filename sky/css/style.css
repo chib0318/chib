@@ -6,6 +6,7 @@
 .all {
   font-family: 'Noto Sans JP', sans-serif;
   overflow: hidden;
+  width: 100%;
 }
 
 .all .banner {
@@ -132,8 +133,8 @@
   left: -600px;
   bottom: -250px;
   width: 140%;
-  -webkit-animation: animate calc(6s * var(--i)) linear infinite;
-          animation: animate calc(6s * var(--i)) linear infinite;
+  -webkit-animation: animate calc(5s * var(--i)) linear infinite;
+          animation: animate calc(5s * var(--i)) linear infinite;
 }
 
 @-webkit-keyframes animate {
@@ -160,6 +161,7 @@
 
 .all .main_1 {
   background: white;
+  margin-bottom: 50px;
 }
 
 .all .main_1 .row {
@@ -195,5 +197,9 @@
 
 .all .main_1 .box img {
   width: 100%;
+}
+
+.all .tototext {
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=style.css.map */
