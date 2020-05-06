@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.all {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+  padding: 0px 20px;
+}
+
+.all .navbar {
+  margin-bottom: 20px;
+  background: #4a89db;
+  padding: 10px 15px;
+}
+
+.all .navbar .navbar-brand1 i {
+  color: white;
+}
+
+.all .navbar .navbar-brand1 .fa-angle-left {
+  font-size: 60px;
+}
+
+.all .navbar .navbar-brand1 .fa-search {
+  font-size: 35px;
+}
+
+.all .navbar .title {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.all .btn-group .navbox .btn {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .all .btn-group .navbox .btn {
+    font-size: 1rem;
+  }
+}
+
+.all .btn-group .dropdown-menu {
+  width: 100%;
+  -webkit-transform: translate3d(0px, 75px, 0px) !important;
+          transform: translate3d(0px, 75px, 0px) !important;
+  border-style: unset;
+  padding: 0;
+  z-index: 1;
+}
+
+.all .btn-group .dropdown-menu .boxaa {
+  background: #eee;
+}
+
+.all .btn-group .dropdown-menu::before {
+  content: '';
+  height: calc(100vh - 177px);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: -1;
+}
+
+.all .btn-group .dropdown-menu .dropdown-item {
+  font-size: 1.4rem;
+  background: white;
+  padding-bottom: 0;
+  padding-top: 20px;
+  height: 100%;
+}
+
+.all .btn-group .dropdown-menu .dropdown-item:active {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .all .btn-group .dropdown-menu .dropdown-item {
+    font-size: 1rem;
+  }
+}
+
+.all .btn-group .dropdown-menu .dropdown-item .dropdown-divider {
+  margin-bottom: 0;
+}
+
+.all .hr_style {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .all .moster_main .moster_box .moster_L {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.all .moster_main .moster_box .moster_L .moster_img {
+  border-color: #a7c6e6;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 10px;
+  background-size: contain;
+  height: 80px;
+  width: 80px;
+  position: relative;
+}
+
+.all .moster_main .moster_box .moster_L .moster_img img {
+  position: absolute;
+  background-color: #e6ecf1;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .all .moster_main .moster_box .moster_L .moster_img {
+    margin-right: 10px;
+  }
+}
+
+.all .moster_main .moster_box .moster_L .no_2 {
+  background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  overflow: hidden;
+}
+
+.all .moster_main .moster_box .moster_L .no_1 {
+  background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  overflow: hidden;
+  background-position: -39px 6px;
+}
+
+.all .moster_main .moster_box .moster_L .star_1 {
+  background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  overflow: hidden;
+  background-position: 4px -38px;
+  left: 63px;
+}
+
+.all .moster_main .moster_box .moster_L .moster_text .title {
+  color: #257cb6;
+  font-size: 1.1rem;
+}
+
+.all .moster_main .moster_box .moster_L .moster_text .category {
+  color: #86afcb;
+}
+
+@media (max-width: 768px) {
+  .all .moster_main .moster_box .moster_R {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.all .moster_main .moster_box .moster_R .moster_title {
+  min-width: 15vh;
+  background-color: #eeeeee;
+  color: #999;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.all .moster_main .moster_box .moster_R .moster_title p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .all .moster_main .moster_box .moster_R .moster_title p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .all .moster_main .moster_box .moster_R .titile_style_1 {
+    display: none !important;
+  }
+}
+
+.all .moster_main .moster_box .moster_R .titile_style_2 {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .all .moster_main .moster_box .moster_R .titile_style_2 {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

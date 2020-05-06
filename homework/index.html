@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="all container">
+
+    <nav class="navbar d-flex justify-content-between">
+      <a class="navbar-brand1" href="#"><i class="fal fa-angle-left"></i>
+      </a>
+      <div class="title">魔物資料</div>
+      <a class="navbar-brand1" href="#"><i class="far fa-search"></i></a>
+    </nav>
+    <div class="btn-group d-flex justify-content-around">
+      <div class="navbox">
+
+        <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">種族
+        </button>
+        <div class="dropdown-menu">
+          <div class="d-flex  flex-wrap boxaa">
+            <button class="dropdown-item col-6" type="button">不限<div class="dropdown-divider"></div></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item col-6" type="button">無形<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">人形<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">植物<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">動物<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">昆蟲<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">魚貝<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">天使<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">惡魔<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">不死<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">龍<div class="dropdown-divider"></div></button>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbox">
+
+        <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">屬性
+        </button>
+        <div class="dropdown-menu">
+          <div class="d-flex  flex-wrap boxaa">
+            <button class="dropdown-item col-6" type="button">不限<div class="dropdown-divider"></div></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item col-6" type="button">無<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">地<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">風<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">水<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">火<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">聖<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">暗<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">念<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">不死<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-6" type="button">毒<div class="dropdown-divider"></div></button>
+          </div>
+        </div>
+      </div>
+      <div class="navbox">
+
+        <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">體型
+        </button>
+        <div class="dropdown-menu">
+          <div class="d-flex  flex-wrap boxaa">
+            <button class="dropdown-item col-12" type="button">不限<div class="dropdown-divider"></div></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item col-12" type="button">小型<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-12" type="button">中型<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-12" type="button">大型<div class="dropdown-divider"></div></button>
+          </div>
+        </div>
+      </div>
+      <div class="navbox">
+
+        <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">類型
+        </button>
+        <div class="dropdown-menu">
+          <div class="d-flex  flex-wrap boxaa">
+            <button class="dropdown-item col-12" type="button">不限<div class="dropdown-divider"></div></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item col-12" type="button">普通<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-12" type="button">MINI BOSS<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-12" type="button">MVP BOSS<div class="dropdown-divider"></div></button>
+          </div>
+        </div>
+      </div>
+      <div class="navbox">
+
+        <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">排序
+        </button>
+        <div class="dropdown-menu">
+          <div class="d-flex  flex-wrap boxaa">
+            <button class="dropdown-item col-12" type="button">默認排序<div class="dropdown-divider"></div></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item col-12" type="button">等級低至高<div class="dropdown-divider"></div></button>
+            <button class="dropdown-item col-12" type="button">等級高至低<div class="dropdown-divider"></div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr_style" width="100%">
+    <div class="moster_main">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+<script>
+  var example = new List("example", {
+    // 參數設定[註1]
+    valueNames: ["name", "age"] // 項目
+  });
+  fetch('https://chib0318.github.io/chib/sky/monster.json')
+    .then(response => {
+      return response.json();
+    })
+    .then(moster => {
+      const mosters = moster.data.list;
+      mosters.forEach(element => {
+        let name = element.name;
+        let lv = element.level;
+        let hp = element.hp.toLocaleString();
+        let imgtotal = element.avatar;
+        let size = element.size;
+        let race = element.race;
+        let nature = element.nature;
+        let type = element.type;
+        let star = element.isStar;
+        let all = document.querySelector('.moster_main .row');
+        let typestar = type - star;
+        // console.log(typestar);
+        //判斷大小
+        // if (size == '1') {
+        //   var allsize = '小型'
+        // } else if (size == '2') {
+        //   var allsize = '中型'
+        // } else if (size == '3') {
+        //   var allsize = '大型'
+        // }
+        //switch寫法
+
+        switch (size) {
+          case 1:
+            allsize = "小型";
+            break;
+          case 2:
+            allsize = "中型";
+            break;
+          case 3:
+            allsize = "大型";
+        }
+        switch (race) {
+          case 0:
+            allrace = "無形";
+            break;
+          case 1:
+            allrace = "人形";
+            break;
+          case 2:
+            allrace = "植物";
+            break;
+          case 3:
+            allrace = "動物";
+            break;
+          case 4:
+            allrace = "昆蟲";
+            break;
+          case 5:
+            allrace = "魚貝";
+            break;
+          case 6:
+            allrace = "天使";
+            break;
+          case 7:
+            allrace = "惡魔";
+            break;
+          case 8:
+            allrace = "不死";
+            break;
+          case 9:
+            allrace = "龍";
+        }
+        switch (nature) {
+          case 0:
+            allnature = "無";
+            break;
+          case 1:
+            allnature = "地";
+            break;
+          case 2:
+            allnature = "風";
+            break;
+          case 3:
+            allnature = "水";
+            break;
+          case 4:
+            allnature = "火";
+            break;
+          case 5:
+            allnature = "聖";
+            break;
+          case 6:
+            allnature = "暗";
+            break;
+          case 7:
+            allnature = "念";
+            break;
+          case 8:
+            allnature = "不死";
+            break;
+          case 9:
+            allnature = "毒";
+        }
+
+        all.innerHTML += `
+                     
+        <div class="col-12 col-md-6 moster_box size_${size} nature_${nature} race_${race} type_${typestar}">
+        <div class ="lvaa d-none">${lv}</div>
+          <div class="hr_po d-flex justify-content-between">
+            <div class="moster_L">
+              <div class="moster_img"><img
+                  src="https://images.weserv.nl/?url=https://rostatic.zhaiwuyu.com/face/${imgtotal}.png" alt=""></div>
+              <div class="small_img no_${type} star_${star}"></div>
+              <div class="moster_text ">
+                <div class="title">${name}</div>
+                <div class="category">${allrace} / ${allnature} / ${allsize}</div>
+              </div>
+            </div>
+            <div class="moster_R ">
+              <div class="moster_title d-flex titile_style_1">
+                <div class="lv mr-4"><p>Lv</p><p>Hp</p></div>
+                <div class="hp"><p>${lv}</p><p>${hp}</p></div>
+              </div>
+              <div class="moster_title titile_style_2">
+                <div class="lv mr-3 d-flex flex-column justify-content-center"><p>Lv</p><p>${lv}</p></div>
+                <div class="hp d-flex justify-content-center flex-column"><p>Hp</p><p>${hp}</p></div>
+              </div>
+            </div>
+          </div>
+          <hr size="5" width="100%">
+        </div>
+                        
+                           `;
+
+
+
+
+
+      });
+    });
+  //等級排序
+  for (let i = 30; i <= 32; i++) {
+    let btn_nature = document.querySelectorAll('.btn-group .navbox .dropdown-menu .dropdown-item');
+
+    btn_nature[i].addEventListener('click', function () {      let lv = document.querySelectorAll('.lvaa');
+      if (i == 30) {
+        lv.forEach(element => {
+        let moster_box = element.parentNode;
+        moster_box.style.order = 1;
+      });
+      } else if (i == 31) {
+        lv.forEach(element => {
+        let moster_box = element.parentNode;
+        let alllv = element.innerText;
+        moster_box.style.order = alllv;
+      });
+      } else {
+        lv.forEach(element => {
+        let moster_box = element.parentNode;
+        let alllv = element.innerText;
+        moster_box.style.order = -alllv;
+      });
+      }
+     
+
+    }, true);
+  }
+  //種族
+  for (let i = 1; i <= 10; i++) {
+    let btn_nature = document.querySelectorAll('.btn-group .navbox .dropdown-menu .dropdown-item');
+    let zzz = i - 1;
+    btn_nature[i].addEventListener('click', function () {
+      let xxx = '.race_' + zzz;
+      let moster_box = document.querySelectorAll('.moster_box');
+      let nature = document.querySelectorAll(xxx);
+      console.log(nature);
+      moster_box.forEach(element => {
+        element.classList.add("d-none");
+        element.style.order = "222";
+      });
+      nature.forEach(element => {
+        element.classList.remove("d-none");
+      });
+    }, true);
+  }
+  //屬性
+  for (let i = 12; i <= 21; i++) {
+    let btn_nature = document.querySelectorAll('.btn-group .navbox .dropdown-menu .dropdown-item');
+    let zzz = i - 12;
+    btn_nature[i].addEventListener('click', function () {
+      let xxx = '.nature_' + zzz;
+      let moster_box = document.querySelectorAll('.moster_box');
+      let nature = document.querySelectorAll(xxx);
+      moster_box.forEach(element => {
+        element.classList.add("d-none");
+      });
+      nature.forEach(element => {
+        element.classList.remove("d-none");
+      });
+    }, true);
+  }
+  //體型
+  for (let i = 23; i <= 25; i++) {
+    let btn_nature = document.querySelectorAll('.btn-group .navbox .dropdown-menu .dropdown-item');
+    let zzz = i - 22;
+    btn_nature[i].addEventListener('click', function () {
+      let xxx = '.size_' + zzz;
+      let moster_box = document.querySelectorAll('.moster_box');
+      let size = document.querySelectorAll(xxx);
+      moster_box.forEach(element => {
+        element.classList.add("d-none");
+      });
+      size.forEach(element => {
+        element.classList.remove("d-none");
+      });
+    }, true);
+  }
+  //類型
+  for (let i = 27; i <= 29; i++) {
+    let btn_nature = document.querySelectorAll('.btn-group .navbox .dropdown-menu .dropdown-item');
+    let zzz = i - 27;
+    btn_nature[i].addEventListener('click', function () {
+      if (i == 27) {
+        let bobo = zzz - 1;
+        let xxx = '.type_' + bobo;
+        let moster_box = document.querySelectorAll('.moster_box');
+        let size = document.querySelectorAll(xxx);
+        moster_box.forEach(element => {
+          element.classList.add("d-none");
+        });
+        size.forEach(element => {
+          element.classList.remove("d-none");
+        });
+      } else {
+        let xxx = '.type_' + zzz;
+        let moster_box = document.querySelectorAll('.moster_box');
+        let size = document.querySelectorAll(xxx);
+        moster_box.forEach(element => {
+          element.classList.add("d-none");
+        });
+        size.forEach(element => {
+          element.classList.remove("d-none");
+        });
+      }
+    }, true);
+  }
+  //不限
+  let nono = [0, 11, 22, 26];
+  nono.l
+  nono.forEach(element => {
+    let btn_size_no = document.querySelectorAll('.btn-group .navbox .dropdown-menu .dropdown-item')[element];
+    btn_size_no.addEventListener('click', function () {
+      let moster_box = document.querySelectorAll('.moster_box');
+      moster_box.forEach(element => {
+        element.classList.remove("d-none");
+      });
+    }, true);
+  });
+</script>
+
+</html>
