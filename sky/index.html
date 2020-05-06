@@ -136,8 +136,6 @@
         <h1 class="d-flex justify-content-center tototext">静止画</h1>
         
 
-
-
         <section class="engine"><a href="https://mobirise.info/q">free responsive website templates</a></section>
         <section once="footers" class="cid-rWGhU9znAM" id="footer6-2">
             <div class="container">
@@ -170,6 +168,23 @@
         var parallax = new Parallax(scene);
         var scene1 = document.getElementById('scene1');
         var parallax = new Parallax(scene1);
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
     </script>
 
