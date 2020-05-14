@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="all container">
+  <div class="all ">
 
     <nav class="navbar d-flex justify-content-between">
       <a class="navbar-brand1" href="#"><i class="fal fa-angle-left"></i>
@@ -131,10 +131,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
 <script>
-  var example = new List("example", {
-    // 參數設定[註1]
-    valueNames: ["name", "age"] // 項目
-  });
+
   fetch('https://chib0318.github.io/chib/sky/monster.json')
     .then(response => {
       return response.json();

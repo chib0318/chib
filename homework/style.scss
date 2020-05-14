@@ -6,7 +6,13 @@ body {
 .all {
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
-    padding:0px 20px;
+    overflow: hidden;
+    width: 60%;
+    margin: auto;
+    @media (max-width: 1166px) {
+        width: 100%;
+    }
+    // padding:0px 20px;
     .navbar{
         margin-bottom: 20px;
         background: #4a89db;
@@ -76,103 +82,106 @@ body {
         padding: 0;
     }
     .moster_main {
-        .moster_box {
-            // margin-bottom: 30px;
-            .moster_L {
-                @media (max-width: 768px) {
-                    display: flex;
-                    align-items: center;
-                }
-                .moster_img {
-                    border-color: #a7c6e6;
-                    border-style: solid;
-                    border-width: 4px;
-                    border-radius: 10px;
-                    background-size: contain;
-                    height: 80px;
-                    width: 80px;
-                    position: relative;
-                    img {
-                        position: absolute;
-                        background-color: #e6ecf1;
-                        width: 100%;
-                        height: 100%;
-                        z-index: -1;
-                    }
+        .row{
+            padding: 0 20px;
+            .moster_box {
+                // margin-bottom: 30px;
+                .moster_L {
                     @media (max-width: 768px) {
-                        margin-right: 10px;
+                        display: flex;
+                        align-items: center;
                     }
-                }
-                .no_2{
-                    background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
-                    width: 40px;
-                    height: 40px;
-                    position: absolute;
-                    top: 0;
-                    left: 16px;
-                    overflow: hidden;
-                }
-                .no_1{
-                    background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
-                    width: 40px;
-                    height: 40px;
-                    position: absolute;
-                    top: 0;
-                    left: 16px;
-                    overflow: hidden;
-                    background-position: -39px 6px;
-                }
-                .star_1{
-                    background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
-                    width: 40px;
-                    height: 40px;
-                    position: absolute;
-                    top: 0;
-                    left: 16px;
-                    overflow: hidden;
-                    background-position: 4px -38px;
-                    left: 63px;
-                }
-                .moster_text {
-                    .title {
-                        color: #257cb6;
-                        font-size: 1.1rem;
-                    }
-                    .category {
-                        color: #86afcb;
-                    }
-                }
-            }
-            .moster_R {
-                @media (max-width: 768px) {
-                    display: flex;
-                    align-items: center;
-                }
-                .moster_title {
-                    min-width: 15vh;
-                    background-color: #eeeeee;
-                    color: #999;
-                    padding: 10px;
-                    border-radius: 5px;
-                    p{
-                        margin: 0;
+                    .moster_img {
+                        border-color: #a7c6e6;
+                        border-style: solid;
+                        border-width: 4px;
+                        border-radius: 10px;
+                        background-size: contain;
+                        height: 80px;
+                        width: 80px;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            background-color: #e6ecf1;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                        }
                         @media (max-width: 768px) {
-                            text-align:center;
+                            margin-right: 10px;
+                        }
+                    }
+                    .no_2{
+                        background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 0;
+                        left: 16px;
+                        overflow: hidden;
+                    }
+                    .no_1{
+                        background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 0;
+                        left: 16px;
+                        overflow: hidden;
+                        background-position: -39px 6px;
+                    }
+                    .star_1{
+                        background: url("https://rosc3.zhaiwuyu.com/m/img/monster-icon.png?version=20190619");
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 0;
+                        left: 16px;
+                        overflow: hidden;
+                        background-position: 4px -38px;
+                        left: 63px;
+                    }
+                    .moster_text {
+                        .title {
+                            color: #257cb6;
+                            font-size: 1.1rem;
+                        }
+                        .category {
+                            color: #86afcb;
                         }
                     }
                 }
-                .titile_style_1{
+                .moster_R {
                     @media (max-width: 768px) {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .moster_title {
+                        min-width: 15vh;
+                        background-color: #eeeeee;
+                        color: #999;
+                        padding: 10px;
+                        border-radius: 5px;
+                        p{
+                            margin: 0;
+                            @media (max-width: 768px) {
+                                text-align:center;
+                            }
+                        }
+                    }
+                    .titile_style_1{
+                        @media (max-width: 768px) {
+                            display: none!important;
+                        }
+                    }
+                    .titile_style_2{
                         display: none!important;
+                        @media (max-width: 768px) {
+                            display: flex !important;
+                        }
                     }
                 }
-                .titile_style_2{
-                    display: none!important;
-                    @media (max-width: 768px) {
-                        display: flex !important;
-                    }
-                }
-            }
-        } //moster_box
+            } //moster_box
+        }
     } //moster_main
 } //all
