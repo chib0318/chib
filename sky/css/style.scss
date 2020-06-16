@@ -16,6 +16,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
+        margin-bottom: 50px;
         @media (max-width:1295px){
             padding-left: 20px;
         }
@@ -102,36 +103,11 @@
             }
         }//clouds
     }//banner
-    .main_1{
-        background: white;
-        margin-bottom: 50px;
-        .row{
-            position: relative;
-            &::after{
-                content:url("../img/1986f1d9b131978f05d53c10282c49f8.png");
-                position: absolute;
-                bottom: 0;
-                left: -40vh;
-                @media (max-width:770px){
-                    display: none;
-                }
-            }
-            padding: 75px 30px;
-            h2{
-                font-size: 2.5em;
-                margin-bottom: 40px;
-            }
-            p{
-                font-size: 1.3em;
-            }
-        }
-        .box{
-            width: 100%;
-            img{
-                width: 100%;
-            }
-        }
-    }//main_1
+    .main1{
+       .text-center{
+           margin-bottom: 30px;
+       } 
+    }//main1
     .tototext{
         margin-bottom: 10px;
     }//tototext
